@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box"></div>
+    <div class="container"></div>
+    <div class="child">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+    </div>
+    Combinators combine the selectors to provide them a useful relationship and the position of content in the document. This comes in handy when you want to style certain elements all at once rather than styling elements individually. CSS combinator selectors are as follows.
+
+Descendant Selector (space)
+Child Selector (>)
+Adjacent Sibling Selector (+)
+General Sibling Selector (~)
+
+Descendant Selector :  The descendant selector matches all elements that are descendants of a specified element.
+<div class="me">
+    <h2>Hello World!</h2>
+    <p>I am child paragraph</p>
+    <p>I am child paragraph</p>
+   </div>
+   <div class="you">
+
+    <h2>This heading is a direct child of the div tag.</h2>
+
+    <p>So is this paragraph tag.</p>
+
+    <button>
+
+        <p>This paragraph tag is NOT a direct child of the first div</p>
+
+    </button>
+
+    <p>This paragraph tag is also a child of the div tag</p>
+
+</div>
+<div class="our">
+
+    <h2>This is a H2 tag.</h2>
+
+    <p>This p tag immediately follows the heading.</p>
+
+    <button>
+
+        <p>This p tag is NOT immediately following a H2 tag.</p>
+
+    </button>
+
+    <h2>Howdy! This is another H2 tag.</h2>
+
+    <p>This p tag is after another H2 tag and gets formatted.</p>
+
+</div>
+<div>
+
+    <h2>I am heading tag!</h2>
+
+    <p>I am paragraph tag 1.</p>
+
+    <button>
+
+        <p>I am a paragraph tag inside a button!</p>
+
+    </button>
+
+    <p>I am paragraph tag 2.</p>
+
+    <p>I am paragraph tag 3.</p>
+
+    <h3>I am another heading tag!</h3>
+
+    <p>I am paragraph tag 4.</p>
+
+</div>
+<pre>
+14. What are CSS Pseudo Selectors?
+
+CSS pseudo-classes are used to add styles to selectors, but only when those selectors meet certain conditions. A pseudo class is expressed by adding a colon (:) after a selector in CSS, followed by a pseudo-class such as "hover", "focus", or "active", like this:
+
+a:hover {
+
+           /*add your style here */
+
+        }
+
+
+Syntax:
+
+
+selector:pseudo-class {
+
+           property : value;
+
+        }
+
+
+Some Examples of Pseudo-Class:
+
+
+
+
+:active
+
+It is used to add style to an active element.
+
+:hover
+
+It adds special effects to an element when the user moves the mouse pointer over the element.
+
+:link
+
+It adds style to the unvisited link.
+
+:visited
+
+It adds style to a visited link.
+
+:lang
+
+It is used to define a language to use in a specified element.
+
+:focus
+
+It selects the element which is focused by the user currently.
+
+:first-child
+
+It adds special effects to an element, which is the first child of another element.
+</pre>
+
+</body>
+</html>
